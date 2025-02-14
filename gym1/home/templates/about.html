@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock title %}
+{% block ntitle %}About GYM{% endblock ntitle %}
+
+{% block body %}
+<div class="container py-5">
+    <h1 class="text-center mb-4">About Us</h1>
+    
+    <!-- Hero Section -->
+    <div class="text-center mb-5">
+        <h2>Welcome to [OUR Gym]</h2>
+        <p>Your fitness journey starts here!</p>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Our Mission</h3>
+            <p>To create a fitness space where everyone can train, improve, and thrive.</p>
+        </div>
+        <div class="col-md-6">
+            <h3>Our Vision</h3>
+            <p>Empowering individuals through fitness, innovation, and community support.</p>
+        </div>
+    </div>
+
+    <!-- Gym Features -->
+    <div class="mt-5">
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>State-of-the-art gym equipment</li>
+            <li>Expert trainers & personalized programs</li>
+            <li>Yoga, strength training, and cardio sessions</li>
+            <li>Diet & nutrition guidance</li>
+            <li>Spacious and hygienic workout spaces</li>
+        </ul>
+    </div>
+
+    <!-- Meet the Trainers -->
+<div class="mt-5">
+    <h3>Meet Our Trainers</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="static/images/m_trainer.jpg" class="img-fluid rounded" alt="Trainer" style="width: 400px; height: 400px; object-fit: cover;">
+            <p><strong>John Doe</strong> - Strength & Conditioning Coach</p>
+        </div>
+        <div class="col-md-4">
+            <img src="static/images/f_trainer.jpg" class="img-fluid rounded" alt="Trainer" style="width: 400px; height: 400px; object-fit: cover;">
+            <p><strong>Jane Smith</strong> - Yoga & Wellness Instructor</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Testimonials -->
+    <div class="mt-5">
+        <h3>What Our Members Say</h3>
+        <blockquote class="blockquote">
+            <p>"This gym has changed my life! Amazing trainers and community." – Alex M.</p>
+        </blockquote>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-5">
+        <h3>Join Us Today!</h3>
+        <p>Ready to transform your fitness? Sign up for a free trial session.</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary">Get Started</a>
+    </div>
+</div>
+
+{% endblock body %}
